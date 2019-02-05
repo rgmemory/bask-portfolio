@@ -1,32 +1,148 @@
-.App {
-  text-align: center;
+.teamWrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 8px 0px;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.teamMember {
+  width: 152px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  padding: 16px 0px;
+}
+.teamImage {
+  height: 200px;
+  background-color: #e4e4e4;
+}
+.teamName {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.22;
+  letter-spacing: -0.1px;
+  text-align: center;
+  color: #0f174f;
+  padding-top: 16px;
+}
+.teamTitle {
+  font-family: "Montserrat", sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.62;
+  letter-spacing: normal;
+  text-align: center;
+  color: #586572;
+}
+/* combine these? */
+.desktopImg {
+  display: none;
 }
 
-.App-link {
-  color: #61dafb;
+.headerLink {
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.desktopNav {
+  display: none;
+}
+.whiteSpacemobile64 {
+  display: inherit;
+  width: 100%;
+  height: 64px;
+}
+
+@media (min-width: 700px) {
+  .desktopNav {
+    display: flex;
+    width: 40vw;
+    justify-content: space-evenly;
+    padding-left: 10%;
   }
-  to {
-    transform: rotate(360deg);
+  /* .inner-header {
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 52px;
+  } */
+  .teamWrapper {
+    padding: 32px 152px;
+  }
+  .teamMember {
+    width: 260px;
+    padding: 32px 0px;
+  }
+  .teamImage {
+    height: 320px;
+  }
+  .mobile-img {
+    display: none;
+  }
+  .desktopWrapper {
+    display: flex;
+  }
+  .desktopWrapperBottom {
+    display: flex;
+    box-shadow: 0 4px 40px -10px rgba(0, 0, 0, 0.1);
+  }
+  .desktopImg {
+    /* border: solid red 3px; */
+    width: 49vw;
+    height: 100%;
+    display: flex;
+    margin-bottom: 0px;
+  }
+  .desktopBlock {
+    display: flex;
+    width: 50vw;
+    justify-content: center;
+    align-items: center;
+  }
+  .whiteTitle {
+    width: 100%;
+    text-align: left;
+    padding-left: 0;
+    padding-bottom: 64px;
+    font-size: 52px;
+  }
+  .header-paragraph {
+    width: 100%;
+    text-align: left;
+    padding-bottom: 96px;
+    font-size: 20px;
+  }
+  .desktopTitle {
+    width: 80vw;
+    text-align: center;
+  }
+
+  .mobile {
+    display: none;
+  }
+  .teamName {
+    font-size: 24px;
+  }
+  .teamTitle {
+    font-size: 18px;
+  }
+  .footerContact {
+    width: 375px;
+  }
+  .whiteSpacemobile64 {
+    display: none;
   }
 }
